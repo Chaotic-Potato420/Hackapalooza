@@ -1,16 +1,20 @@
 {
-    "manifest_version": 2,
-    "name": "Project",
-    "version": "1.0.0",
-    "description": "This is a placeholder for the description.",
-    "short_name": "Project",
-    "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
-    "permissions": ["activeTab"],
-    "background": {
+  "manifest_version": 2,
+  "name": "Tab craze",
+  "version": "1.0.0",
+  "description": "Did you have fun? I bet you had to look up how to turn this off. ehe",
+  "short_name": "Craze",
+  "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
+  "permissions": ["activeTab"],
+  "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-    "browser_action": {
-      "default_popup": "popup.html"
-    }
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon.png"
+  },
+  "icons":{
+    "128": "assets/icon.png"
+  }
 }
