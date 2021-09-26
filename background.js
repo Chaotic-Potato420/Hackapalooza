@@ -1,6 +1,6 @@
 var tabs = 0;
 let closed = 0;
-var audio = new Audio("assets/msc.mp3");
+var audio = new Audio("msc.mp3");
 
 function callback(){
     choosePic();
@@ -9,7 +9,7 @@ function callback(){
     audio.pause();
     if (tabs == 10){
         alert("DISCO PARTY!!!!!!!!")
-        window.open('assets/disco.gif', 'popup_name','height=' + screen.height + ',width=' + screen.width + ',resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,location=yes')
+        window.open('disco.gif', 'popup_name','height=' + screen.height + ',width=' + screen.width + ',resizable=yes,scrollbars=yes,toolbar=yes,menubar=yes,location=yes')
         audio.play();
         localStorage.setItem("vOneLocalStorage", closed); 
         tabs = 0;
